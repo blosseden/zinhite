@@ -1,0 +1,93 @@
+{
+    "version" : "0.1.0",
+    "tree" : [
+        {
+            "name" : "KSA",
+            "key" : "ksa",
+            "pathName" : "greeting-ksa-organization-rule-management",
+            "child": [
+                {
+                    "name" : "about",
+                    "key" : "about",
+                    "child": [
+                        {
+                            "name" : "인사말",
+                            "key" : "greeting",
+                            "component": "visitReg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name" : "출입관리",
+            "key" : "inOutMg",
+            "pathName" : "inOutMg-idCard-idCardReg",
+            "child": [
+                {
+                    "name" : "ID카드",
+                    "key" : "idCard",
+                    "child": [
+                        {
+                            "name" : "신청",
+                            "key" : "idCardReg",
+                            "component": "idCardReg"
+                        },
+                        {
+                            "name" : "신청 현황",
+                            "key" : "idCardInfo",
+                            "component": "idCardInfo"
+                        },
+                        {
+                            "name" : "수정/해지",
+                            "key" : "idCardUpdDel",
+                            "component": "idCardUpdDel"
+                        }
+                    ]
+                },
+                {
+                    "name" : "사옥 출입 등록",
+                    "key" : "buildingIO",
+                    "child": [
+                        {
+                            "name" : "신청",
+                            "key" : "buildingIOReg",
+                            "component": "buildingIOReg"
+                        },
+                        {
+                            "name" : "신청 현황",
+                            "key" : "buildingIOInfo",
+                            "component": "buildingIOInfo"
+                        },
+                        {
+                            "name" : "수정/해지",
+                            "key" : "buildingIOUpdDel",
+                            "component": "buildingIOUpdDel"
+                        }
+                    ]
+                },
+                {
+                    "name" : "관계사/협력사 출입 등록",
+                    "key" : "bp",
+                    "child": [
+                        {
+                            "name" : "신청",
+                            "key" : "bpReg",
+                            "component": "bpReg"
+                        },
+                        {
+                            "name" : "신청 현황",
+                            "key" : "bpInfo",
+                            "component": "bpInfo"
+                        },
+                        {
+                            "name" : "수정/해지",
+                            "key" : "bpUpdDel",
+                            "component": "bpUpdDel"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
