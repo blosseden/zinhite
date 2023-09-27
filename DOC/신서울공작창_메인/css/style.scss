@@ -1,0 +1,1642 @@
+@charset "utf-8";
+
+$mobile: 'screen and (max-width:768px)';
+
+@keyframes train_move {
+   0% {
+       right: -100%;
+   }
+   100% {
+      right: 110%;
+   }
+}
+
+@keyframes train_move_2 {
+   0% {
+       left: -100%;
+   }
+   100% {
+      left: 110%;
+   }
+}
+
+#wrap {
+   width: 1920px;
+   margin: 0 auto;
+   overflow-x: hidden;
+   @media #{$mobile} {
+      width: 768px;
+   }
+
+    //헤더 영역
+    > header {
+      width: 1920px;
+      margin: 0 auto;
+      height: 120px;
+      position: relative;
+      z-index: 1000;
+      background-color: #000;
+      @media #{$mobile} {
+         width: 768px;
+      }
+      &.fixed {
+         width: 1920px;
+         position: fixed;
+         top: 0;
+         //left: 0;
+        // opacity: 50%;
+       //  background-color: #fff;
+         z-index: 1000;
+         @media #{$mobile} {
+            width: 768px;
+         }
+     }
+
+      > p {
+         position: absolute;
+         left: 4%;
+         top: -65%;
+         width: 400px;
+         height: 300px;
+         text-indent: -9999px;
+         background-image: url(./../images/logo.png);
+         background-size: 400px 300px;
+         background-repeat: no-repeat;
+         z-index: 1000;
+         @media #{$mobile} {
+            left: 0%;
+            top: -30%;
+            width: 250px;
+            height: 200px;
+            background-size: 250px 200px;
+         }
+         > a {
+            display: block;
+            height: 150px;
+         } //end of a
+      } //end of p
+
+   //다크모드
+   >div{
+      margin: 0 auto;
+      @media #{$mobile} {
+         width: 768px;
+      }
+      > .darkmode {
+         margin: 0 auto;
+         position: absolute;
+         right: 10%;
+         top: 28%;
+         padding-bottom: 50px;
+         @media #{$mobile} {
+            z-index: 100;
+            right: 15%;
+         }
+      }
+      }//end of div
+
+      >nav.pc_menu{
+           @media #{$mobile} {
+               display: none;
+            }
+         > .menu_btn {
+            display: flex;
+            position: absolute;
+            top: 27%;
+            right: 18%;
+            > li {
+               width: 150px;
+               height: 50px;
+               margin-left: 50px;
+               line-height: 50px;
+               text-align: center;
+               font-size: 20px;
+               border: 1px solid #fff;
+               border-radius: 40px;
+               &:hover {
+                  font-weight: 800;
+               }
+               > a {
+                  display: block;
+                  height: 100px;
+                  color: #fff;
+               } //end of a
+            } //end of li
+         } //end of .gnb
+      }//end of nav.pc_menu
+
+
+         > .gnb {
+            display: flex;
+            position: absolute;
+            top: 25%;
+            right: 15%;
+            // @media #{$mobile} {
+            //    width: 768px;
+            //    right: -37%;
+            // }
+            > li {
+               width: 150px;
+               height: 50px;
+               margin-left: 50px;
+               line-height: 50px;
+               text-align: center;
+               font-size: 20px;
+               border: 1px solid #fff;
+               border-radius: 40px;
+
+               // @media #{$mobile} {
+               //    margin: 5px;
+               //    width: 100px;
+               //    font-size: 17px;
+               // }
+               &:hover {
+                  font-weight: 800;
+               }
+               > a {
+                  display: block;
+                  height: 100px;
+                  color: #fff;
+               } //end of a
+            } //end of li
+         } //end of .gnb
+   } //end of header
+
+     >div{
+     //신서울공작창 메인페이지
+     > main.main_visual {
+      position: relative;
+      width: 1920px;
+      height: 1000px;
+      margin: 0 auto;
+      z-index: 0;
+      @media #{$mobile} {
+         width: 768px;
+         height: 500px;
+      }
+      > .section-slides {
+         position: relative;
+         overflow: hidden;
+         width: 1920px;
+         height: 800px;
+         @media #{$mobile} {
+            width: 768px;
+            height: 300px;
+         }
+         > .slides-container {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(1920px * 6);
+            height: 800px;
+            @media #{$mobile} {
+               width: calc(1920px * 6);
+            }
+            > p {
+               width: 1920px;
+               height: 800px;
+               text-indent: -9999px;
+               background-size: cover;
+               background-repeat: no-repeat;
+               @media #{$mobile} {
+                  width: 1920px;
+                  background-size: 768px 300px;
+               }
+               &:nth-child(1) {
+                  background-image: url(./../images/slides1.png);
+               }
+               &:nth-child(2) {
+                  background-image: url(./../images/slides2.png);
+               }
+               &:nth-child(3) {
+                  background-image: url(./../images/slides3.png);
+               }
+               &:nth-child(4) {
+                  background-image: url(./../images/slides4.png);
+               }
+               &:nth-child(5) {
+                  background-image: url(./../images/slides5.png);
+               }
+               &:nth-child(6) {
+                  background-image: url(./../images/slides6.png);
+               }
+               > a {
+                  display: block;
+                  height: 800px;
+                  @media #{$mobile} {
+                     height: 400px;
+                  }
+               } //end of p
+            } //end of p
+         } //end of .slides-container
+
+         > .mouse {
+            position: absolute;
+            left: 50%;
+            bottom: 80px;
+            width: 30px;
+            height: 50px;
+            margin-left: -15px;
+            border: 3px solid #000;
+            box-sizing: border-box;
+            border-radius: 15px;
+      
+            @media #{$mobile} {
+               display: none;
+            }
+      
+            @keyframes mousewheel {
+               0% {
+                  top: 5px;
+                  opacity: 0;
+               }
+               30% {
+                  top: 10px;
+                  opacity: 1;
+               }
+               100% {
+                  top: 20px;
+                  opacity: 0;
+               }
+            }
+      
+            > .wheel {
+               position: absolute;
+               left: 49%;
+               top: 5px;
+               width: 4px;
+               height: 10px;
+               margin-left: -2px;
+               text-indent: -9999px;
+               background-color: #000;
+               border-radius: 2px;
+      
+               animation: mousewheel 1s linear infinite;
+            } //end of .wheel
+         } //end of mouse
+      } //end of .section-slides
+      > .slides-pagination {
+         display: flex;
+         position: absolute;
+         left: 45.5%;
+         padding-top: 30px;
+         @media #{$mobile} {
+            left: 38%;
+         }
+         > li {
+            width: 15px;
+            height: 15px;
+            margin-left: 10px;
+            border-radius: 50%;
+            text-indent: -9999px;
+            background-color: #dedede;
+            &:hover {
+               background-color: #f00;
+            }
+            &.on {
+               background-color: #f00;
+               width: 30px;
+               border-radius: 20px;
+            }
+            > a {
+               display: block;
+               height: 15px;
+            } //end of a
+         } //end of li
+      } //end of .slides-pagination
+
+      > .slides-navigation {
+         z-index: 1000;
+         > .prev {
+            position: absolute;
+            left: 0%;
+            top: 30%;
+            width: 80px;
+            height: 80px;
+            text-indent: -9999px;
+            background-image: url(./../images/prev.png);
+            background-size: 80px 80px;
+            background-repeat: no-repeat;
+            z-index: 1000;
+            >a{
+               display: block;
+               height: 80px;
+               color:#dedede;
+               font-size: 25px;
+               z-index: 1000;
+            }//end of a
+            @media #{$mobile} {
+               display: none;
+            }
+         } //end of .prev
+      
+         > .next {
+            position: absolute;
+            right: 0%;
+            top: 30%;
+            width: 80px;
+            height: 80px;
+            text-indent: -9999px;
+            background-image: url(./../images/next.png);
+            background-size: 80px 80px;
+            background-repeat: no-repeat;
+            z-index: 1000;
+            >a{
+               display: block;
+               height: 80px;
+               font-size: 25px;
+               color:#dedede;
+               z-index: 1000;
+             }//end of a
+            @media #{$mobile} {
+               display: none;
+            }
+         } //end of .next
+      } //end of .slides-navigation
+   } //end of main.mainpage
+      }//end of div
+
+   //고속철도 페이지
+   >.hyperlink_gosoktrain{
+    width: 1800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display:flex; 
+    align-content:flex-start; 
+    flex-wrap:wrap; 
+    overflow:auto;
+    height: 450px;
+    justify-content: center;
+    @media #{$mobile} {
+            width: 640px;
+        }
+  >li{
+    width: 25%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    @media #{$mobile} {
+        width: 33.3333%;
+    }
+    >a{
+       display: block;
+       >figure{
+         >img{
+           display: block;
+           margin: 0 auto;
+         }//end of img
+         >figcaption{
+             font-size: 15px;
+             margin-top: 20px;
+             text-align: center;
+             font-weight: 500;    
+             line-height: 20px;    
+         }//end of figcaption
+       }//end of figure
+    }//end of a
+  }//end of li
+}//end of .hyperlink_gosoktrain
+
+//고속철도 모바일용 표 
+>div{
+    @media #{$mobile} {
+        width: 768px;
+    }
+}
+
+//공지사항 페이지
+>section.page{
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    @media #{$mobile} {
+        width: 768px;
+    }
+//   >p{ 
+//      width: 1200px;
+//      height: 100px;
+//      line-height: 100px;
+//      text-align: justify;
+//      text-indent: 50px;
+//      font-size: 17px;
+//      color: gray;
+//      border-bottom: 1px solid #d9d9d9;
+//      box-sizing: border-box;
+//      @media #{$mobile} {
+//         width: 768px;
+//     }
+//      >a{
+//         display: block;
+//         height: 80px;
+//         >b{
+//           color:#f00;
+//           padding-left: 20px;
+//         }//end of b
+//      }//end of a
+//   }//end of p
+//   >ul{
+//     display: flex;
+//     justify-content: space-around;
+//     padding-top: 50px;
+//     padding-bottom: 50px;
+//     >li{
+//       font-size: 17px;
+//       @media #{$mobile} {
+//         font-size: 15px;
+//     }
+//     }//end of li
+//   }//end of ul
+
+//   >input{
+//     position: absolute;
+//     right: 0;
+//     width: 300px;
+//     height: 30px;
+//     text-indent: 10px;
+//     font-size: 15px;
+//     background-image: url(./../images/ico_search.png);
+//     background-size: 20px 20px;
+//     background-position: 270px 5px;
+//     background-repeat: no-repeat;
+//     border: none;
+//     border: 1px solid #dedede;
+//     @media #{$mobile} {
+//         width: 500px;
+//         position: absolute;
+//         left: 0;
+//         margin: 0 auto;
+//         background-position: 460px 5px;
+//     }
+//   }//end of input
+}//end of section.page
+
+//메인페이지_홈소개 섹션
+>div{
+>section.home{
+   width: 100%;
+   height: 1200px;
+   margin: 0 auto;
+   position: relative;
+   @media #{$mobile} {
+      width: 768px;
+      height: 600px;
+   }
+   >h2{ 
+     font-size: 50px;
+     text-align: center;
+     padding-bottom: 50px;
+   }//end of h2
+
+   >p{
+     font-size: 20px;
+     line-height: 30px;
+     padding-bottom: 50px;
+     text-align: center;
+    }//end of p
+
+   > .slides-container {
+      display: flex;
+      position: absolute;
+      width: 600%;
+   //   margin-top: 150px;
+      @media #{$mobile} {
+         width: 600%;
+        // margin-top: 120px;
+      }
+      > p {
+         width: 16.666%;
+         height: 800px;
+         // margin-top: 130px;
+         background-size: 1800px 800px;
+         background-position: center center;
+         background-repeat: no-repeat;
+         @media #{$mobile} {
+            height: 400px;
+            background-size: 720px 400px;
+         }
+         &:nth-child(1) {
+            background-image: url(./../images/slides1.png);
+            text-indent: -9999px;
+         }
+         &:nth-child(2) {
+            background-image: url(./../images/slides2.png);
+            text-indent: -9999px;
+         }
+         &:nth-child(3) {
+            background-image: url(./../images/slides3.png);
+            text-indent: -9999px;
+         }
+         &:nth-child(4) {
+            background-image: url(./../images/slides4.png);
+            text-indent: -9999px;
+         }
+         &:nth-child(5) {
+            background-image: url(./../images/slides5.png);
+            text-indent: -9999px;
+         }
+         &:nth-child(6) {
+            background-image: url(./../images/slides6.png);
+            text-indent: -9999px;
+         }
+         > a {
+            display: block;
+            height: 800px;
+         } //end of a
+      } //end of p
+   } //end of .slides-container
+
+   > .pagination {
+      position: relative;
+      > ul {
+         position: absolute;
+         top: -30%;
+         left: 3.1%;
+         display: flex;
+         //margin-top: 40px;
+
+         @media #{$mobile} {
+            justify-content: space-around;
+         }
+         > li {
+            width: 300px;
+            height: 150px;
+            background-size: 300px 150px;
+            background-repeat: no-repeat;
+            border: 3px solid #f00;
+            box-sizing: border-box;
+            @media #{$mobile} {
+               width: 120px;
+               height: 100px;
+               background-size: 120px 100px;
+            }
+            &:nth-child(1) {
+               background-image: url(./../images/slides1.png);
+             //  text-indent: -9999px;
+            }
+            &:nth-child(2) {
+               background-image: url(./../images/slides2.png);
+             //  text-indent: -9999px;
+            }
+            &:nth-child(3) {
+               background-image: url(./../images/slides3.png);
+             //  text-indent: -9999px;
+            }
+            &:nth-child(4) {
+               background-image: url(./../images/slides4.png);
+             //  text-indent: -9999px;
+            }
+            &:nth-child(5) {
+               background-image: url(./../images/slides5.png);
+              // text-indent: -9999px;
+            }
+            &:nth-child(6) {
+               background-image: url(./../images/slides6.png);
+              // text-indent: -9999px;
+            }
+            &:hover {
+              // border: 3px solid #fff;
+               box-sizing: border-box;
+            }
+            > a {
+               display: block;
+               height: 150px;
+               font-size: 0;
+               text-align: center;
+               line-height: 150px;
+               @media #{$mobile} {
+                  height: 100px;
+                  line-height: 100px;
+               }
+               &:hover{
+                  font-size: 30px;
+                  color:#fff;
+                  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                  @media #{$mobile} {
+                     font-size: 15px;
+                  }
+               }
+            } //end of a
+         } //end of li
+      } //end of ul
+   } //end of .pagination
+   >button{
+      position: absolute;
+      left: 3.1%;
+      top: 85%;
+      width: 1800px;
+      height: 80px;
+      margin: 0 auto;
+      border: 1px solid #000;
+      background-color: #000;
+      border-radius: 20px 20px 20px 20px; 
+      z-index: 100;
+      @media #{$mobile} {
+         width: 720px;
+         top: 105%;
+      }
+       >a{
+         display: block;
+         color:#fff;
+         text-align: center;
+         font-size: 20px;
+         &:hover{
+            font-weight: 800;
+            text-decoration: underline;
+            //font-size: 30px;
+         }
+       }//end of a
+   }//end of p
+}//end of .home
+}//end of div
+
+
+//메인페이지_철도도트 섹션
+>section.dote{
+   width: 1920px;
+   height: 600px;
+   margin: 0 auto;
+   position: relative;
+   @media #{$mobile} {
+      width: 768px;
+   }
+   >.bgi{
+      width: 1920px;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: 1920px 1500px;
+      background-attachment: fixed;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./../images/bgi.png);
+      @media #{$mobile} {
+         width: 768px;
+         background-size: 768px 1500px;
+      }
+      >h2{
+         position: absolute;
+         left: 33%;
+         top: 35%;
+         @media #{$mobile} {
+            left: 22%;
+         }
+         >a{
+           display: block;
+           color:#fff;
+           font-size: 50px;
+           text-align: center;
+           @media #{$mobile} {
+            font-size: 30px;
+         }
+         }//end of a
+      }//end of h2
+
+      >p{
+         width: 300px;
+         height: 70px;
+         border: 1px solid #000;
+         border-radius: 20px;
+         background-color: #000;
+         margin: 0 auto;
+         position: absolute;
+         top: 50%;
+         left: 42%;
+         @media #{$mobile} {
+            left: 31%;
+         }
+         >a{ 
+           display: block;
+           color:#fff;
+           font-size: 25px;
+           line-height: 70px;
+           text-align: center;
+           &:hover{
+            text-decoration: underline;
+           }
+         }//end of a
+      }//end of p
+   }//end of .bgi
+}//end of dote
+
+//기관차 페이지
+>.hyperlink_gigontrain{
+    width: 1800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display:flex; 
+    align-content:flex-start; 
+    flex-wrap:wrap; 
+    overflow:auto;
+    height: 450px;
+    justify-content: center;
+    @media #{$mobile} {
+            width: 768px;
+        }
+  >li{
+    width: 25%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    @media #{$mobile} {
+        width: 33.3333%;
+    }
+    >a{
+       display: block;
+       >figure{
+         >img{
+           display: block;
+           margin: 0 auto;
+         }//end of img
+         >figcaption{
+             font-size: 15px;
+             margin-top: 20px;
+             text-align: center;
+             font-weight: 500;    
+             line-height: 20px;    
+         }//end of figcaption
+       }//end of figure
+    }//end of a
+  }//end of li
+}//end of .hyperlink_gigontrain
+
+//기관차 모바일용 표
+>div{
+    @media #{$mobile} {
+        width: 768px;
+    }
+}
+
+//하이퍼링크 페이지
+>section.hyperlink_page{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    border: 1px solid gray;
+    @media #{$mobile} {
+       width: 768px;
+       margin: 0 auto;
+   }
+    >.list_1{
+      display: flex;
+      justify-content: space-around;
+      width: 1000px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: 50px;
+      line-height: 100px;
+      font-size: 20px;
+      border: 1px solid #dedede;
+      @media #{$mobile} {
+       width: 768px;
+   }
+      >li{
+       &:hover{
+           text-decoration: underline;
+          }
+      }//end of li
+      >a{
+       display: block;
+      }//end of a
+    }//end of .list_1
+    >.list_2{
+      display: flex;
+      justify-content: space-around;
+      width: 1000px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: 50px;
+      //line-height: 100px;
+      //font-size: 20px;
+      border: 1px solid #dedede;
+      text-indent: -9999px;
+      @media #{$mobile} {
+       width: 768px;
+   }
+      >li{
+       &:nth-child(1){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_1.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(2){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_2.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(3){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_3.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(4){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_4.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(5){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_5.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(6){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_6.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(7){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_7.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(8){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_8.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(9){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_9.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(10){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_bundang.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(11){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_Sinbundang.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(12){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_Air.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(13){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_Kung2.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(14){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_Kung3.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(15){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_Kung.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:nth-child(16){
+           width: 50px;
+           height: 50px;
+           margin-top: 25px;
+           background-size: 50px 50px;
+           background-repeat: no-repeat;
+           background-image: url(./../images/line_suhe.png);
+           @media #{$mobile} {
+               width: 30px;
+               height: 30px;
+               margin-top: 35px;
+               background-size: 30px 30px;
+           }
+       }
+       &:hover{
+           text-decoration: underline;
+          }
+
+          >a{
+           display: block;
+           height: 50px;
+          }//end of a
+      }//end of li
+    }//end of .list_1
+    >.list_3{
+      display: flex;
+      justify-content: space-around;
+      width: 1000px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: 50px;
+      line-height: 100px;
+      font-size: 20px;
+      border: 1px solid #dedede;
+      @media #{$mobile} {
+       width: 768px;
+       font-size: 17px;
+   }
+      >li{
+       &:hover{
+           text-decoration: underline;
+          }
+      }//end of li
+      >a{
+       display: block;
+      }//end of a
+    }//end of .list_1
+    >.list_4{
+      display: flex;
+      justify-content: space-around;
+      width: 1000px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: 50px;
+      line-height: 100px;
+      font-size: 20px;
+      border: 1px solid #dedede;
+      @media #{$mobile} {
+       width: 768px;
+   }
+      >li{
+       &:hover{
+           text-decoration: underline;
+          }
+      }//end of li
+      >a{
+       display: block;
+      }//end of a
+    }//end of .list_1
+    >.list_5{
+      display: flex;
+      justify-content: space-around;
+      width: 1000px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: 50px;
+      line-height: 100px;
+      font-size: 20px;
+      border: 1px solid #dedede;
+      @media #{$mobile} {
+       width: 768px;
+   }
+      >li{
+       &:hover{
+           text-decoration: underline;
+          }
+      }//end of li
+      >a{
+       display: block;
+      }//end of a
+    }//end of .list_1
+    >.list_6{
+      display: flex;
+      justify-content: space-around;
+      width: 1000px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: 50px;
+      line-height: 100px;
+      font-size: 20px;
+      border: 1px solid #dedede;
+      @media #{$mobile} {
+       width: 768px;
+   }
+      >li{
+       &:hover{
+           text-decoration: underline;
+          }
+      }//end of li
+      >a{
+       display: block;
+      }//end of a
+    }//end of .list_1
+  }//end of section.hyperlink_page
+
+  //홈소개_홈페이지소개
+  >section.home{
+    width: 1920px;
+    height: 1000px;
+    margin: 0 auto;
+    @media #{$mobile} {
+        width: 768px;
+        height: 650px;
+    }
+  >h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0px;
+    @media #{$mobile} {
+        
+    }
+  }//end of h2
+
+  >img{
+     display: block;
+     width: 1800px;
+     height: 600px;
+     border: 1px solid #000;
+     margin: 0 auto;
+     @media #{$mobile} {
+        width: 720px;
+        height: 400px;
+        margin: 0 auto;
+    }
+  }//end of img
+
+  >p{
+  // text-align: center;
+   font-size: 17px;
+   line-height: 40px;
+   padding-top: 30px;
+   margin: 0 auto;
+   text-align: center;
+   @media #{$mobile} {
+    text-align: center;
+}
+  }//end of p
+}//end of section.home
+
+//홈소개_운영자 소개
+  >section.introduce{
+    width: 1200px;
+    margin: 0 auto;
+    @media #{$mobile} {
+      width: 720px;
+  }
+    >h2{
+      text-align: center;
+      font-size: 30px;
+      padding: 100px 0px;
+      @media #{$mobile} {
+         padding-top: 300px;
+     }
+    }//end of h2
+  > div{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+   >img{
+     display: block;
+     width: 600px;
+     height: 800px;
+     border: 1px solid #000;
+     box-sizing: border-box;
+     @media #{$mobile} {
+      width: 350px;
+  }
+   }//end of img
+
+   >p{
+      text-align: right;
+      font-size: 17px;
+      line-height: 30px;
+   }//end of p
+  }//end of div
+}//end of section.introduce
+
+//철도도트 페이지
+>.hyperlink_dote{
+    width: 1800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display:flex; 
+    align-content:flex-start; 
+    flex-wrap:wrap; 
+    overflow:auto;
+    height: 450px;
+    justify-content: center;
+    @media #{$mobile} {
+            width: 768px;
+        }
+  >li{
+    width: 25%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    @media #{$mobile} {
+        width: 33.3333%;
+    }
+    >a{
+       display: block;
+       >figure{
+         >img{
+           display: block;
+           margin: 0 auto;
+         }//end of img
+         >figcaption{
+             font-size: 15px;
+             margin-top: 20px;
+             text-align: center;
+             font-weight: 500;    
+             line-height: 20px;    
+         }//end of figcaption
+       }//end of figure
+    }//end of a
+  }//end of li
+}//end of .hyperlink_dote
+
+//철도도트 모바일용 표
+>div{
+    @media #{$mobile} {
+        width: 768px;
+        margin: 0 auto;
+    }
+}//end of div
+
+
+    //메인페이지 공지사항
+    >div{
+   > #announcement {
+        width: 1800px;
+        height: auto;
+        margin: 0 auto 150px;
+       // padding-top: 300px;
+        @media #{$mobile} {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 50px;
+            padding-top: 200px;
+        }
+    
+        > .apply {
+            border: 3px solid #000;
+            border-radius: 10px;
+            box-sizing: border-box;
+    
+            @media #{$mobile} {
+                border: none;
+            }
+    
+            > .board {
+                position: relative;
+                height: 120px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #d9d9d9;
+    
+                @media #{$mobile} {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+    
+                > h3 {
+                    position: absolute;
+                    left: 100px;
+                    top: 20px;
+                    padding-top: 30px;
+                    font-weight: 500;
+                    font-size: 30px;
+                    // background-image: url(./../images/ico.png);
+               // background-size: 30px 30px;
+                    //background-position: 8px 0;
+                    background-repeat: no-repeat;
+                    @media #{$mobile} {
+                        top: -20px;
+                        left: 50px;
+                    }
+               &:after {
+                        display: block;
+                        position: absolute;
+                        right: -90px;
+                        top: 10px;
+                        width: 1px;
+                        height: 50px;
+                        background-color: #dedede;
+                        content: '';
+    
+                        @media #{$mobile} {
+                            display: none;
+                        }
+                    }
+                } //end of h3
+            > p {
+                    position: absolute;
+                    left: 350px;
+                    top: 30px;
+                    font-size: 15px;
+                    line-height: 24px;
+                    font-weight: 500;
+    
+                    @media #{$mobile} {
+                        left: 50px;
+                        top: 35px;
+                        margin-top: 20px;
+                        
+                    }
+                } //end of p
+            } //end of .help
+    
+            > dl {
+                @media #{$mobile} {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+                > dt {
+                    //text-indent: 40px;
+                    // background-image: url(./../images/ico.png);
+                    // background-repeat: no-repeat;
+                    // background-size: 30px 20px;
+                    // background-position: 60px 25px;
+                    @media #{$mobile} {
+                      text-indent: 30px;
+                      background-position: 20px 25px;  
+                    }
+                    &.on {
+                        background-color: #222222;
+    
+                        > a {
+                            color:#fff;
+                            font-weight: 800;
+                            border-bottom-color: transparent;
+                            &:after {
+                                background-image: url(./../images/after_up.png);
+                            }
+                        }
+                    }
+    
+                    &:nth-of-type(4) > a {
+                        border-bottom: none;
+                    }
+    
+                    > a {
+                        display: block;
+                        position: relative;
+                        width: 90%;
+                        margin: 0 auto;
+                        color: gray;
+                        font-weight: 300;
+                        font-size: 15px;
+                        line-height: 70px;
+                        border-bottom: 1px solid #d9d9d9;
+                  >b{
+                     padding-left: 20px;
+                     color:#f00;   
+                   }
+                        &:after {
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            width: 15px;
+                            height: 19px;
+                            margin-top: -5px;
+                            background-image: url(./../images/after_down.png);
+                            background-repeat: no-repeat;
+                            content: '';
+                        }
+                    } //end of a
+                } //end of dt
+    
+                > dd {
+                    display: none;
+                    background-color: #fff;
+
+                    > .post {
+                  color: gray;
+                        margin: 0 90px;
+                        padding: 40px 0;
+                        line-height: 25px;
+                        font-size: 15px;
+
+                        @media #{$mobile} {
+                            margin: 0 20px;
+                        }
+                    }
+                }
+            } //end of dl
+    
+            > p {
+                display: flex;
+                align-items: center;
+                height: 100px;
+                padding-left: 72px;
+                font-size: 15px;
+                font-weight: 200;
+                line-height: 32px;
+                background-color: #000;
+    
+                @media #{$mobile} {
+                    height: 150px;
+                    padding: 0 20px;
+                    font-weight: 300;
+                    text-align: center;
+                    background-image: none;
+                }
+            } //end of p
+        } //end of .apply
+    } //end of #announcement
+      }//end of div
+
+    //메인페이지 열차무빙
+   > section.bg_train {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      margin: 0 auto;
+   //   padding-top: 50px;
+      @media #{$mobile} {
+         width: 768px;
+         //display: none;
+      }
+      > .train {
+         > img {
+            position: absolute;
+            top: 25%;
+            display: block;
+            width: 100%;
+            height: 50px;
+            //border: 1px solid #000;
+            animation: train_move 15.0s linear 0s infinite;
+            @media #{$mobile} {
+               height: 30px;
+               top: 35%;
+            }
+         } //end of img
+      } //end of .train
+
+      > .bgi {
+         > img {
+            display: block;
+            width: 100%;
+            height: 100px;
+         //   border: 1px solid #000;
+         } //end of img
+      } //end of .bgi
+
+      > .train_2 {
+         > img {
+            position: absolute;
+            top: 70%;
+            display: block;
+            width: 100%;
+            height: 50px;
+            //border: 1px solid #000;
+            animation: train_move_2 15.0s linear 0s infinite;
+            @media #{$mobile} {
+               height: 30px;
+               top: 80%;
+            }
+         } //end of img
+      } //end of .train
+
+      > .bgi_2 {
+         > img {
+            display: block;
+            width: 100%;
+            height: 100px;
+         //   border: 1px solid #000;
+         } //end of img
+      } //end of .bgi_2
+   } //end of .bg_train
+
+
+    //푸터 영역
+   > footer {
+      width: 1920px;
+      height: 300px;
+      padding-top: -100px;
+      margin: 0 auto;
+      background-color: #000;
+      margin-top: 70px;
+      position: relative;
+      @media #{$mobile} {
+         width: 768px;
+         height: 300px;
+      }
+      > .footer-logo {
+         position: absolute;
+         top: 0%;
+         left: 5%;
+         width: 400px;
+         height: 300px;
+         text-indent: -9999px;
+         background-size: 400px 300px;
+         background-image: url(./../images/logo.png);
+         @media #{$mobile} {
+            left: 5%;
+            top: -10%;
+            background-size: 400px 300px;
+            background-repeat: no-repeat;
+         }
+         > a {
+            display: block;
+            height: 300px;
+         } //end of a
+      } //end of .footer-logo
+
+      > address {
+         position: absolute;
+         left: 30%;
+         top: 25%;
+         font-size: 17px;
+         line-height: 30px;
+         color: #fff;
+         @media #{$mobile} {
+            left: 7%;
+            font-size: 17px;
+            top: 55%;
+         }
+         > a {
+            color: #fff;
+         } //end of a
+      } //end of address
+
+      > .sns-logo {
+         position: absolute;
+         right: 5%;
+         top: 20%;
+         display: flex;
+         @media #{$mobile} {
+            right: 5%;
+            top: 20%;
+         }
+         > li {
+            margin: 0 20px;
+            @media #{$mobile} {
+               margin: 0 5px;
+            }
+            > a {
+               display: block;
+               width: 50px;
+               height: 50px;
+               > i {
+                  font-size: 50px;
+                  color: #fff;
+                  @media #{$mobile} {
+                     font-size: 30px;
+                  }
+               }
+               >p{
+                  width: 50px;
+                  height: 50px;
+                  text-indent: -9999px;
+                  background-image: url(./../images/sns-blog.png);
+                  background-repeat: no-repeat;
+                  background-size: 50px 50px;
+                  @media #{$mobile} {
+                     background-size: 30px 30px;
+                     width: 30px;
+                     height: 30px;
+                  }
+               }//end of p
+            } //end of a
+         } //end of li
+      } //end of .sns-logo
+   } //end of footer
+
+    //탑버튼
+   > .topbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      position: fixed;
+      right: 2%;
+      bottom: 100px;
+      width: 50px;
+      height: 50px;
+   //   margin-right: 20px;
+      background-color: #000;
+   } //end of .topbar
+    
+    //언더버튼
+    > .underbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      right: 2%;
+      top: 92%;
+      bottom: 70px;
+      width: 50px;
+      height: 50px;
+      // margin-right: 20px;
+      background-color: #000;
+      z-index: 100;
+      @media #{$mobile} {
+         top: 91.5%;
+      }
+   } //end of .underbar
+} //end 

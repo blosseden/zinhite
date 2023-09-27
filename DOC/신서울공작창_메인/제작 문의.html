@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신서울공작창_제작 문의</title>
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+		/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script defer src="./js/function.js"></script>
+<style> 
+/* Qestion Form css */
+ h2{text-indent: 360px; font-size: 40px;padding-top: 50px;padding-bottom: 50px;}
+  @media screen and (max-width:768px) {
+  h2 {
+    text-indent: 0;
+    text-align: center;
+  }
+}
+ p{text-indent: 360px; font-size: 20px;padding-bottom: 50px;}
+ @media screen and (max-width:768px) {
+  p {
+    text-indent: 0;
+    text-align: center;
+  }
+}
+ .question{position: relative; width:1200px; margin: 0 auto; border-top:2px solid #bdbdbd;border-bottom:2px solid #bdbdbd;font-family:"NanumGothic",sans-serif;} 
+ .question .qtit{text-align:left; margin:50px 0 10px 0;} 
+ .question tr{border-top:1px solid #cdcdcd;} 
+ .question tr:first-child{border-top:0;} 
+ .question th{background:#f6f6f6; width:20%;text-align:left; padding-left:3%} 
+ .question td{text-align:left;background:#fff;padding-top:1%
+ !important;padding-bottom:1%
+ !important;color:#5c5c5c;font-size:15px;line-height:26px;padding-left:3%} 
+ .question input[type="text"], 
+ .question select{margin-right:1%;color:#5c5c5c;line-height:12px;font-size:14px;font-family:"NanumGothic",sans-serif;background:#f6f6f6;vertical-align:middle;border:1px solid #cdcdcd;padding:1%;} 
+ .question select{padding:0.9%;} 
+ .question textarea{vertical-align:middle;border:1px solid #cdcdcd; width:94%; height:100px;background:#f6f6f6;padding:1%}
+ .question label{margin-right:1%;} 
+ .question .button{margin-right:1%;line-height:12px;font-size:14px;font-family:"NanumGothic",sans-serif;background:#5e5e5e;vertical-align:middle;border:1px solid #5e5e5e;padding:1%; cursor:pointer;} 
+ .question .button a{color:#fff;} 
+ .question .add{margin-top:1%;} 
+ .question .wid10{width:10%;} 
+ .question .wid20{width:20%;} 
+ .question .wid30{width:30%;} 
+ .question .wid53{width:49%;} 
+ .btnblack{margin-top:50px;} 
+ .btnblack a{width:10%;height: 30px;margin:0 auto;display:block;padding:0.7em 1.5em 0.8em 1.5em;font-size:16px;color:#fff;border:1px solid #000;border-radius:10px;background:#000; line-height: 30px; text-align:center;letter-spacing:-0.5px; font-weight:bold;} 
+ 
+ @media screen and (max-width:768px) {
+    .btnblack a {
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color:#000;
+    border-bottom: 3px solid #000;
+    border-radius: 0;
+  }
+  .btnblack a:hover{
+    text-decoration: underline;
+  }
+}
+ </style> 
+ </head>
+ 
+ 
+ <body>
+    <div id="wrap">
+        <header>
+            <h1 class="sr-only">New Seoul Train</h1>
+            <p class="logo"><a href="./신서울 공작창.html">Logo</a></p>
+
+            <nav class="pc_menu">
+                <ul class="menu_btn">
+                    <li><a href="./하이퍼링크.html" target="_blank">철도 도트</a></li>
+                    <li><a href="./공지사항.html" target="_blank">공지 사항</a></li>
+                    <li><a href="./홈소개.html" target="_blank">홈소개</a></li>
+                    <li><a href="./제작 문의.html" target="_blank">제작 문의</a></li>
+                </ul>
+            </nav>
+
+    <div id="page">		
+                <div id="toggle">
+                    <div class="bar"></div>
+                </div>
+    
+        <section id="overlay">
+        <nav>
+            <ul class="gnb">
+                <li><a href="./하이퍼링크.html" target="_blank">철도 도트</a></li>
+                <li><a href="./공지사항.html" target="_blank">공지 사항</a></li>
+                <li><a href="./홈소개.html" target="_blank">홈소개</a></li>
+                <li><a href="./제작 문의.html" target="_blank">제작 문의</a></li>
+            </ul>
+        </nav>
+        </section>
+    </div>
+        </header>
+
+ <!-- Form --> 
+ <table class="question">
+    
+    <h2>| 문의하기</h2>
+
+    <p>철도 도트 제작을 의뢰하실 수 있습니다.</p>
+    
+    <caption class="qtit">
+        <img src="../sub_cs_text1.png" alt="기본정보"/>
+    </caption> 
+    
+    <tr> 
+        <th class="th" scope="row">이름</th> 
+        <td><input type="text" title="이름" class="wid20" placeholder="이름을 입력하세요" /> </td> 
+    </tr> 
+    
+    <tr> 
+        <th class="th" scope="row">연락처</th>
+        <td><select lass="wid10" title="핸드폰 앞 자리 선택"> <option value="010">010</option> <option value="031">031</option> <option value="070">070</option> <option value="011">011</option> <option value="018">018</option> <option value="019">019</option> </select><input type="text" title="전화번호 앞" maxlength="4" lass="wid20" /><input type="text" title="전화번호뒤" maxlength="4" lass="wid20" /></td> 
+    </tr> 
+    
+    <tr> 
+        <th class="th" scope="row">이메일 주소</th> 
+        <td><input type="text" class="wid53" title="이메일" placeholder="예 : dudrhkddmlcn@naver.com"></td> 
+    </tr> 
+    
+    <tr> 
+        <th class="th" scope="row">첨부 파일</th> 
+        <td>
+            <input type="file" size="10" title="우편번호" readonly style='cursor:pointer'>
+        </td> 
+    </tr> 
+    
+    <tr> 
+        <th class="th" scope="row">도트 종류</th> 
+        <td> 
+            <div> <label> <input type="radio" name="re_course" value="radio" id="program_0" value="종류1"> 기관차 </label> 
+            <label> <input type="radio" name="re_course" value="radio" id="program_1" value="종류2"> 국내 철도 </label> 
+            <label> <input type="radio" name="re_course" value="radio" id="program_2" value="종류3"> 해외 철도 </label> 
+            <label> <input type="radio" name="re_course" value="radio" id="program_3" value="종류4"> 고속 철도 </label> </div> 
+    </tr> 
+    
+    <tr> 
+        <th class="th" scope="row">노선 유형</th> 
+        <td>
+            <select class="wid30" title="카테고리 선택"> 
+             <option value="1">1호선</option>
+             <option value="2">2호선</option>
+             <option value="3">3호선</option>
+             <option value="4">4호선</option> 
+            </select> 
+    </tr> 
+    
+    <tr> 
+        <th class="th" scope="row">문의 내용</th> 
+        <td> <textarea title="문의사항" placeholder="200자 이내(400byte)로 입력해 주세요"></textarea> </td> 
+    </tr> 
+
+ </table> 
+
+
+<div class="btnblack"> <a href="#" class="Btn">신청하기</a> </div> 
+<!-- //Form -->
+
+
+<footer>
+    <div class="footer-logo"><a href="#">Logo</a></div>
+    <address>
+        <br>
+        &copy; 2023 ALL RIGHTS RESERVED By 김진운 <br>
+        &copy; Design & Publishing By 이은규 | Developed By 이태랑
+    </address>
+
+    <ul class="sns-logo">
+        <li>
+            <a href="https://blog.naver.com/gray8501" target="_blank"><p>blog</p></a>
+        </li>
+        <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+    </ul>
+</footer>
+
+<!-- <aside class="topbar">
+    <p>
+        <a href="#"><img src="./images/go-to-top.png" alt="#" /></a>
+    </p>
+</aside>
+
+<aside class="underbar">
+    <p>
+        <a href="#"><img src="./images/go-to-under.png" alt="#" /></a>
+    </p>
+</aside> -->
+
+    </div>
+ </body>
+</html>
