@@ -59,7 +59,7 @@ $mobile: 'screen and (max-width:768px)';
          width: 400px;
          height: 300px;
          text-indent: -9999px;
-         background-image: url(./../images/logo.png);
+         background-image: url(../images/logo.png);
          background-size: 400px 300px;
          background-repeat: no-repeat;
          z-index: 1000;
@@ -204,22 +204,22 @@ $mobile: 'screen and (max-width:768px)';
                   background-size: 768px 300px;
                }
                &:nth-child(1) {
-                  background-image: url(./../images/slides1.png);
+                  background-image: url(../images/slides1.png);
                }
                &:nth-child(2) {
-                  background-image: url(./../images/slides2.png);
+                  background-image: url(../images/slides2.png);
                }
                &:nth-child(3) {
-                  background-image: url(./../images/slides3.png);
+                  background-image: url(../images/slides3.png);
                }
                &:nth-child(4) {
-                  background-image: url(./../images/slides4.png);
+                  background-image: url(../images/slides4.png);
                }
                &:nth-child(5) {
-                  background-image: url(./../images/slides5.png);
+                  background-image: url(../images/slides5.png);
                }
                &:nth-child(6) {
-                  background-image: url(./../images/slides6.png);
+                  background-image: url(../images/slides6.png);
                }
                > a {
                   display: block;
@@ -315,7 +315,7 @@ $mobile: 'screen and (max-width:768px)';
             width: 80px;
             height: 80px;
             text-indent: -9999px;
-            background-image: url(./../images/prev.png);
+            background-image: url(../images/prev.png);
             background-size: 80px 80px;
             background-repeat: no-repeat;
             z-index: 1000;
@@ -338,7 +338,7 @@ $mobile: 'screen and (max-width:768px)';
             width: 80px;
             height: 80px;
             text-indent: -9999px;
-            background-image: url(./../images/next.png);
+            background-image: url(../images/next.png);
             background-size: 80px 80px;
             background-repeat: no-repeat;
             z-index: 1000;
@@ -516,27 +516,27 @@ $mobile: 'screen and (max-width:768px)';
             background-size: 720px 400px;
          }
          &:nth-child(1) {
-            background-image: url(./../images/slides1.png);
+            background-image: url(../images/slides1.png);
             text-indent: -9999px;
          }
          &:nth-child(2) {
-            background-image: url(./../images/slides2.png);
+            background-image: url(../images/slides2.png);
             text-indent: -9999px;
          }
          &:nth-child(3) {
-            background-image: url(./../images/slides3.png);
+            background-image: url(../images/slides3.png);
             text-indent: -9999px;
          }
          &:nth-child(4) {
-            background-image: url(./../images/slides4.png);
+            background-image: url(../images/slides4.png);
             text-indent: -9999px;
          }
          &:nth-child(5) {
-            background-image: url(./../images/slides5.png);
+            background-image: url(../images/slides5.png);
             text-indent: -9999px;
          }
          &:nth-child(6) {
-            background-image: url(./../images/slides6.png);
+            background-image: url(../images/slides6.png);
             text-indent: -9999px;
          }
          > a {
@@ -571,27 +571,27 @@ $mobile: 'screen and (max-width:768px)';
                background-size: 120px 100px;
             }
             &:nth-child(1) {
-               background-image: url(./../images/slides1.png);
+               background-image: url(../images/slides1.png);
              //  text-indent: -9999px;
             }
             &:nth-child(2) {
-               background-image: url(./../images/slides2.png);
+               background-image: url(../images/slides2.png);
              //  text-indent: -9999px;
             }
             &:nth-child(3) {
-               background-image: url(./../images/slides3.png);
+               background-image: url(../images/slides3.png);
              //  text-indent: -9999px;
             }
             &:nth-child(4) {
-               background-image: url(./../images/slides4.png);
+               background-image: url(../images/slides4.png);
              //  text-indent: -9999px;
             }
             &:nth-child(5) {
-               background-image: url(./../images/slides5.png);
+               background-image: url(../images/slides5.png);
               // text-indent: -9999px;
             }
             &:nth-child(6) {
-               background-image: url(./../images/slides6.png);
+               background-image: url(../images/slides6.png);
               // text-indent: -9999px;
             }
             &:hover {
@@ -666,7 +666,7 @@ $mobile: 'screen and (max-width:768px)';
       background-repeat: no-repeat;
       background-size: 1920px 1500px;
       background-attachment: fixed;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./../images/bgi.png);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bgi.png);
       @media #{$mobile} {
          width: 768px;
          background-size: 768px 1500px;
@@ -817,7 +817,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_1.png);
+           background-image: url(../images/line_1.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -831,7 +831,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_2.png);
+           background-image: url(../images/line_2.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -845,7 +845,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_3.png);
+           background-image: url(../images/line_3.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -859,7 +859,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_4.png);
+           background-image: url(../images/line_4.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -873,7 +873,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_5.png);
+           background-image: url(../images/line_5.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -887,7 +887,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_6.png);
+           background-image: url(../images/line_6.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -901,7 +901,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_7.png);
+           background-image: url(../images/line_7.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -915,7 +915,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_8.png);
+           background-image: url(../images/line_8.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -929,7 +929,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_9.png);
+           background-image: url(../images/line_9.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -943,7 +943,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_bundang.png);
+           background-image: url(../images/line_bundang.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -957,7 +957,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_Sinbundang.png);
+           background-image: url(../images/line_Sinbundang.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -971,7 +971,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_Air.png);
+           background-image: url(../images/line_Air.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -985,7 +985,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_Kung2.png);
+           background-image: url(../images/line_Kung2.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -999,7 +999,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_Kung3.png);
+           background-image: url(../images/line_Kung3.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -1013,7 +1013,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_Kung.png);
+           background-image: url(../images/line_Kung.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -1027,7 +1027,7 @@ $mobile: 'screen and (max-width:768px)';
            margin-top: 25px;
            background-size: 50px 50px;
            background-repeat: no-repeat;
-           background-image: url(./../images/line_suhe.png);
+           background-image: url(../images/line_suhe.png);
            @media #{$mobile} {
                width: 30px;
                height: 30px;
@@ -1372,7 +1372,7 @@ $mobile: 'screen and (max-width:768px)';
                             font-weight: 800;
                             border-bottom-color: transparent;
                             &:after {
-                                background-image: url(./../images/after_up.png);
+                                background-image: url(../images/after_up.png);
                             }
                         }
                     }
@@ -1403,7 +1403,7 @@ $mobile: 'screen and (max-width:768px)';
                             width: 15px;
                             height: 19px;
                             margin-top: -5px;
-                            background-image: url(./../images/after_down.png);
+                            background-image: url(../images/after_down.png);
                             background-repeat: no-repeat;
                             content: '';
                         }
@@ -1534,7 +1534,7 @@ $mobile: 'screen and (max-width:768px)';
          height: 300px;
          text-indent: -9999px;
          background-size: 400px 300px;
-         background-image: url(./../images/logo.png);
+         background-image: url(../images/logo.png);
          @media #{$mobile} {
             left: 5%;
             top: -10%;
@@ -1593,7 +1593,7 @@ $mobile: 'screen and (max-width:768px)';
                   width: 50px;
                   height: 50px;
                   text-indent: -9999px;
-                  background-image: url(./../images/sns-blog.png);
+                  background-image: url(../images/sns-blog.png);
                   background-repeat: no-repeat;
                   background-size: 50px 50px;
                   @media #{$mobile} {

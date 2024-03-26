@@ -55,7 +55,7 @@
   width: 400px;
   height: 300px;
   text-indent: -9999px;
-  background-image: url(./../images/logo.png);
+  background-image: url(../images/logo.png);
   background-size: 400px 300px;
   background-repeat: no-repeat;
   z-index: 1000;
@@ -375,22 +375,22 @@ opacity: 1;
   }
 }
 #wrap > div > main.main_visual > .section-slides > .slides-container > p:nth-child(1) {
-  background-image: url(./../images/slides1.png);
+  background-image: url(../images/slides1.png);
 }
 #wrap > div > main.main_visual > .section-slides > .slides-container > p:nth-child(2) {
-  background-image: url(./../images/slides2.png);
+  background-image: url(../images/slides2.png);
 }
 #wrap > div > main.main_visual > .section-slides > .slides-container > p:nth-child(3) {
-  background-image: url(./../images/slides3.png);
+  background-image: url(../images/slides3.png);
 }
 #wrap > div > main.main_visual > .section-slides > .slides-container > p:nth-child(4) {
-  background-image: url(./../images/slides4.png);
+  background-image: url(../images/slides4.png);
 }
 #wrap > div > main.main_visual > .section-slides > .slides-container > p:nth-child(5) {
-  background-image: url(./../images/slides5.png);
+  background-image: url(../images/slides5.png);
 }
 #wrap > div > main.main_visual > .section-slides > .slides-container > p:nth-child(6) {
-  background-image: url(./../images/slides6.png);
+  background-image: url(../images/slides6.png);
 }
 #wrap > div > main.main_visual > .section-slides > .slides-container > p > a {
   display: block;
@@ -484,7 +484,7 @@ opacity: 1;
   width: 80px;
   height: 80px;
   text-indent: -9999px;
-  background-image: url(./../images/prev.png);
+  background-image: url(../images/prev.png);
   background-size: 80px 80px;
   background-repeat: no-repeat;
   z-index: 1000;
@@ -508,7 +508,7 @@ opacity: 1;
   width: 80px;
   height: 80px;
   text-indent: -9999px;
-  background-image: url(./../images/next.png);
+  background-image: url(../images/next.png);
   background-size: 80px 80px;
   background-repeat: no-repeat;
   z-index: 1000;
@@ -628,27 +628,27 @@ opacity: 1;
   }
 }
 #wrap > div > section.home > .slides-container > p:nth-child(1) {
-  background-image: url(./../images/slides1.png);
+  background-image: url(../images/slides1.png);
   text-indent: -9999px;
 }
 #wrap > div > section.home > .slides-container > p:nth-child(2) {
-  background-image: url(./../images/slides2.png);
+  background-image: url(../images/slides2.png);
   text-indent: -9999px;
 }
 #wrap > div > section.home > .slides-container > p:nth-child(3) {
-  background-image: url(./../images/slides3.png);
+  background-image: url(../images/slides3.png);
   text-indent: -9999px;
 }
 #wrap > div > section.home > .slides-container > p:nth-child(4) {
-  background-image: url(./../images/slides4.png);
+  background-image: url(../images/slides4.png);
   text-indent: -9999px;
 }
 #wrap > div > section.home > .slides-container > p:nth-child(5) {
-  background-image: url(./../images/slides5.png);
+  background-image: url(../images/slides5.png);
   text-indent: -9999px;
 }
 #wrap > div > section.home > .slides-container > p:nth-child(6) {
-  background-image: url(./../images/slides6.png);
+  background-image: url(../images/slides6.png);
   text-indent: -9999px;
 }
 #wrap > div > section.home > .slides-container > p > a {
@@ -685,22 +685,22 @@ opacity: 1;
   }
 }
 #wrap > div > section.home > .pagination > ul > li:nth-child(1) {
-  background-image: url(./../images/slides1.png);
+  background-image: url(../images/slides1.png);
 }
 #wrap > div > section.home > .pagination > ul > li:nth-child(2) {
-  background-image: url(./../images/slides2.png);
+  background-image: url(../images/slides2.png);
 }
 #wrap > div > section.home > .pagination > ul > li:nth-child(3) {
-  background-image: url(./../images/slides3.png);
+  background-image: url(../images/slides3.png);
 }
 #wrap > div > section.home > .pagination > ul > li:nth-child(4) {
-  background-image: url(./../images/slides4.png);
+  background-image: url(../images/slides4.png);
 }
 #wrap > div > section.home > .pagination > ul > li:nth-child(5) {
-  background-image: url(./../images/slides5.png);
+  background-image: url(../images/slides5.png);
 }
 #wrap > div > section.home > .pagination > ul > li:nth-child(6) {
-  background-image: url(./../images/slides6.png);
+  background-image: url(../images/slides6.png);
 }
 #wrap > div > section.home > .pagination > ul > li:hover {
   box-sizing: border-box;
@@ -773,7 +773,7 @@ opacity: 1;
   background-repeat: no-repeat;
   background-size: 1920px 1500px;
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./../images/bgi.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bgi.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.dote > .bgi {
@@ -929,7 +929,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_1.png);
+  background-image: url(../images/line_1.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(1) {
@@ -945,7 +945,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_2.png);
+  background-image: url(../images/line_2.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(2) {
@@ -961,7 +961,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_3.png);
+  background-image: url(../images/line_3.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(3) {
@@ -977,7 +977,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_4.png);
+  background-image: url(../images/line_4.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(4) {
@@ -993,7 +993,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_5.png);
+  background-image: url(../images/line_5.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(5) {
@@ -1009,7 +1009,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_6.png);
+  background-image: url(../images/line_6.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(6) {
@@ -1025,7 +1025,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_7.png);
+  background-image: url(../images/line_7.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(7) {
@@ -1041,7 +1041,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_8.png);
+  background-image: url(../images/line_8.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(8) {
@@ -1057,7 +1057,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_9.png);
+  background-image: url(../images/line_9.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(9) {
@@ -1073,7 +1073,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_bundang.png);
+  background-image: url(../images/line_bundang.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(10) {
@@ -1089,7 +1089,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_Sinbundang.png);
+  background-image: url(../images/line_Sinbundang.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(11) {
@@ -1105,7 +1105,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_Air.png);
+  background-image: url(../images/line_Air.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(12) {
@@ -1121,7 +1121,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_Kung2.png);
+  background-image: url(../images/line_Kung2.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(13) {
@@ -1137,7 +1137,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_Kung3.png);
+  background-image: url(../images/line_Kung3.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(14) {
@@ -1153,7 +1153,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_Kung.png);
+  background-image: url(../images/line_Kung.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(15) {
@@ -1169,7 +1169,7 @@ opacity: 1;
   margin-top: 25px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
-  background-image: url(./../images/line_suhe.png);
+  background-image: url(../images/line_suhe.png);
 }
 @media screen and (max-width:768px) {
   #wrap > section.hyperlink_page > .list_2 > li:nth-child(16) {
@@ -1506,7 +1506,7 @@ opacity: 1;
   border-bottom-color: transparent;
 }
 #wrap > div > #announcement > .apply > dl > dt.on > a:after {
-  background-image: url(./../images/after_up.png);
+  background-image: url(../images/after_up.png);
 }
 #wrap > div > #announcement > .apply > dl > dt:nth-of-type(4) > a {
   border-bottom: none;
@@ -1534,7 +1534,7 @@ opacity: 1;
   width: 15px;
   height: 19px;
   margin-top: -5px;
-  background-image: url(./../images/after_down.png);
+  background-image: url(../images/after_down.png);
   background-repeat: no-repeat;
   content: "";
 }
@@ -1645,7 +1645,7 @@ opacity: 1;
   height: 300px;
   text-indent: -9999px;
   background-size: 400px 300px;
-  background-image: url(./../images/logo.png);
+  background-image: url(../images/logo.png);
 }
 @media screen and (max-width:768px) {
   #wrap > footer > .footer-logo {
@@ -1715,7 +1715,7 @@ opacity: 1;
   width: 50px;
   height: 50px;
   text-indent: -9999px;
-  background-image: url(./../images/sns-blog.png);
+  background-image: url(../images/sns-blog.png);
   background-repeat: no-repeat;
   background-size: 50px 50px;
 }

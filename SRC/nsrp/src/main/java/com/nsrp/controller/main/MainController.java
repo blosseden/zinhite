@@ -1,4 +1,4 @@
-package com.nsrp.controller.board;
+package com.nsrp.controller.main;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,6 +9,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-public class BoardController{
+public class MainController {
+
+
+    /**
+     *  TBL_BOARD  게시판 리스트
+     *  @return map
+     */
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String main() throws Exception {
+        return "main/main";
+    }
 
 }
